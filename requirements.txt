@@ -1,0 +1,5 @@
+langchain-core==0.3.37
+langchain-mistralai==0.2.6
+streamlit
+python-dotenv
+youtube-transcript-api==0.6.3
