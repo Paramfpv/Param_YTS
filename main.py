@@ -25,6 +25,8 @@ system_prompt = system_prompt + extra
 
 def get_transcript(url):
         video_id = url.split("/")[3]
+        video_id = video_id.split("?")[0]
+        st.write("video id = "+video_id)
         transcript = YouTubeTranscriptApi.get_transcript(video_id)
         formatter = TextFormatter()
         final = formatter.format_transcript(transcript)
@@ -47,5 +49,4 @@ if st.button("Print Summary"):
         st.write(summary)
 
 
-st.write("Please enter the correct URL of the video")
 
