@@ -10,6 +10,8 @@ from youtube_transcript_api import YouTubeTranscriptApi
 
 load_dotenv()
 
+st.cache_data.clear()
+st.cache_resource.clear()
 
 st.header("Youtube Video Summarizer")
 
